@@ -1,0 +1,14 @@
+[package]
+name = "ffi_bridge"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = ["pyo3_extension", "pyo3_lib"]
+
+[lib]
+name = "ffi_bridge"
+crate-type = ["cdylib"]
+
+[dependencies]
+cpython = { version = "0.7", features = ["extension-module"] }

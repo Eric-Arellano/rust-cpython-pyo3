@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+PY="python3.9"
+export PYO3_PYTHON="${PY}"
+export PYTHON_SYS_EXECUTABLE="${PY}" # Consumed by the cpython crate.
+
+cd "src/rust/ffi_bridge" || exit "${PIPESTATUS[0]}"
+exec cargo "$@"
