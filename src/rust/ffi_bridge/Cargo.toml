@@ -12,4 +12,5 @@ crate-type = ["cdylib"]
 
 [dependencies]
 cpython = { version = "0.7", features = ["extension-module"] }
+pyo3 = "0.15"
 pyo3_lib = { path = "pyo3_lib" }

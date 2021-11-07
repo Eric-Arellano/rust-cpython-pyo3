@@ -7,6 +7,7 @@ pub struct Person {
 }
 
 #[pyclass]
+#[derive(Clone, Debug)]
 pub struct PyPerson(pub Person);
 
 #[pymethods]

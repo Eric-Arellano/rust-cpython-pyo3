@@ -1,2 +1,3 @@
 target/
 src/python/ffi_bridge/*.so
+__pycache__/

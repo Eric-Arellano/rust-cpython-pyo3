@@ -46,6 +46,7 @@ name = "ffi_bridge"
 version = "0.1.0"
 dependencies = [
  "cpython",
+ "pyo3",
  "pyo3_lib",
 ]
 
